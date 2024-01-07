@@ -39,9 +39,9 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background-color: var(--black);
-    /* border-radius: 2rem; */
-    border-radius: 0rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    
 
 
 }
@@ -190,9 +190,9 @@ justify-content: center;
 }
 
 #twitter-link-pg1:hover{
-    background: white;
+    background: rgb(0, 0, 0);
 
-    -webkit-text-fill-color: rgb(29 ,161, 242) ;
+    -webkit-text-fill-color: rgb(255, 255, 255) ;
 }
 
 
@@ -1025,6 +1025,35 @@ justify-content: center;
 
 
 
+
+  
+
+  .certificates .packages {
+    padding-inline: 2rem;
+  }
+
+  .certificates .packages .box-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 2rem;
+    /* background-color: antiquewhite; */
+    /* grid-template-columns: 32rem 32rem 32rem; */
+  }
+
+  .certificates .packages .box-container .box {
+    box-shadow: var(--box-shadow);
+    background-color: transparent;
+    border-color: rgba(211, 211, 223, 0.258);
+    border-style: solid;
+    border-width: 0.3rem;
+    /* background:rgba(211, 211, 223, 0.258); */
+    align-items: center; /* Center items vertically */
+    display: inline-block;
+
+    border-radius: 2rem;
+  }
+/* --- */
 
   .portfolio .packages {
     padding-inline: 2rem;
