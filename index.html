@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/my (2).png" type="image/x-icon">
     <title>My portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -12,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrapmin.css" />
     <link rel="stylesheet" href="css/font/bootstrap-icons.css" />
@@ -184,6 +186,35 @@ color: #f19b2c;
   animation: anim-pg1-img 0.5s linear;
 }
 
+ 
+
+#sendmsg{
+  font-size: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  padding-inline: 1.9rem;
+  float: right;
+  /* margin-left: 25rem; */
+  text-decoration: none;
+  background-color: rgb(18, 49, 85);
+  color: white;
+  border-width: 0.1rem;
+  border-color: white;
+  border-style: solid;
+  transition: 0.5s;
+}
+
+#sendmsg:hover{
+  background-color: rgb(18, 49, 65);
+
+  
+}
+
+
+
+
+
 @keyframes anim-pg1-img {
   0%{
     transform: translateX(-700px);
@@ -255,38 +286,38 @@ color: #f19b2c;
       <h1><span>Zeyad Gamal</span> <i id="nav-angle-right" class="fas fa-angle-right"></i></h1>
 
       <div class="social-links-nav">
-        <a id="facebook-link-nav" href=""
+        <a id="facebook-link-nav" href="https://www.facebook.com/zeyad.abosetta.9"
           ><i class="bi bi-facebook"></i
         ></a>
-        <a id="linkedin-link-nav" href="" 
+        <a id="linkedin-link-nav" href="https://www.linkedin.com/in/zeyad-abosetta-z25?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
           ><i class="bi bi-linkedin"></i
         ></a>
-        <a id="whatsapp-link-nav" href="" 
+        <a id="whatsapp-link-nav" href="https://wa.me/+20102-435-6959" 
           ><i class="bi bi-whatsapp"></i
         ></a>
-        <a id="github-link-nav" href="" 
+        <a id="github-link-nav" href="https://github.com/Zeyad-Gamal" 
           ><i class="bi bi-github"></i
         ></a>
-        <a id="instagram-link-nav" href="" 
+        <a id="instagram-link-nav" href="https://www.instagram.com/zeyad_2552002?igsh=MWV6ZnZmM3VrZ2FqcA==" 
           ><i class="bi bi-instagram"></i
         ></a>
-        <a id="twitter-link-nav" href="" 
-          ><i class="bi bi-twitter"></i
+        <a id="twitter-link-nav" href="https://x.com/ZAbosetta?t=Lk9JJSWe4ZyN4lJiohJwlA&s=09" 
+          ><i class="bi bi-twitter-x"></i
         ></a>
 
     
       </div>
-      <a href="" class="btnref">Home</a>
-      <a href="" class="btnref">About</a>
-      <a href="" class="btnref">Blog</a>
-      <a href="" class="btnref">Portfolio</a>
-      <a href="" class="btnref">Skills</a>
-      <a href="" class="btnref">Contact</a>
+      <a href="#home" class="btnref">Home</a>
+      <a href="#about" class="btnref">About</a>
+      <a href="#portfolio" class="btnref">Portfolio</a>
+      <a href="#home-packages" class="btnref">Skills</a>
+      <a href="#review" class="btnref">Contact</a>
 
 
 
      
       </div>
+
     <section
       class="header"
       style="
@@ -294,6 +325,7 @@ color: #f19b2c;
         padding-bottom: 1rem;
         box-shadow: var(--box-shadow);
       "
+
     >
       <a
         href="home.html"
@@ -304,7 +336,7 @@ color: #f19b2c;
           text-decoration: none;
           font-size: 3rem;
           font-weight: 600;
-          color: var(--main-color);
+          color: #2c2765;
         "
         >Abosetta</a
       >
@@ -312,39 +344,23 @@ color: #f19b2c;
 
 
 
-      <nav class="navbar" dir="rtl" lang="ar">
+      <nav class="navbar">
         <!-- <a style="padding-bottom: 1rem; padding-top: 1rem; width: 6rem;font-size: 2rem;" id="sign-in-btn"><i class="bi bi-gear"></i></a>
         <a style="padding-bottom: 1rem; padding-top: 1rem;" id="sign-in-btn">حساب جديد</a> -->
 
-        <a href="" class="btnref">Home</a>
-        <a href="" class="btnref">About</a>
-        <a href="" class="btnref">Blog</a>
-        <a href="" class="btnref">Portfolio</a>
-        <a href="" class="btnref">Contact</a>
+        <a href="#home" class="btnref">Home</a>
+        <a href="#about" class="btnref">About</a>
+        <a href="#portfolio" class="btnref">Portfolio</a>
+        <a href="#review" class="btnref">Contact</a>
       </nav>
 
       <div id="menu-btn" class="fas fa-bars"></div>
     </section>
 
-    <!-- <div class="up" style="background: rgb(18,49,85);
-    background: linear-gradient(90deg, rgba(18,49,85,1) 6%, rgba(178,115,63,1) 90%);background-size: cover;background-position: center;">
-
-    <div class="hero " style="background-color: aqua;"> -->
-
-    <!-- <div style="background-color: rgb(34, 15, 53);opacity: 0.5; padding-right: 20rem;padding-top: 66rem;  position: absolute;margin-left: 66rem; "></div> -->
-
-    <!-- <img src="images/myphoto2.jfif" alt="">
-        <div   style="position: absolute; padding-bottom: 10rem;background-color: blue;right: 2rem;top: 10rem;">
-        
-            <h1 class="heading-title" style="text-align: right; font-family: Verdana, Geneva, Tahoma, sans-serif;">Zeyad Gamal</h1>
-            <p style="color: rgb(91, 89, 89); font-size: 2rem;margin-top: 1rem; text-align: right;" dir="rtl" lang="ar"> المكان المثالي لشراء الستائر.<br> لدينا مجموعة واسعة من الستائر للاختيار من بينها،<br> بما في ذلك الستائر الكلاسيكية والعصرية. كما نقدم مجموعة متنوعة<br> من الأقمشة والألوان والتصاميم، بحيث يمكنك العثور على الستائر المثالية لمنزلك.</p>
-            <a id="explore-btn" href="#home-packages" class="btn"  dir="rtl" lang="ar" >استكشف</a>
-        
-        </div>
-</div>
- -->
+    
 
     <section
+    id="home"
       class="review home"
       style="
         background: rgb(18, 49, 85);
@@ -425,35 +441,36 @@ color: #f19b2c;
         </p>
 
         <div class="refs">
-          <a href="" class="btnref">Home</a>
-          <a href="" class="btnref">About</a>
+          
+          <a href="#about" class="btnref">About</a>
+          <a href="#services" class="btnref">Services</a>
           <!-- <a href="" class="btnref">Blog</a> -->
-          <a href="" class="btnref">Portfolio</a>
-          <a href="" class="btnref">Skills</a>
+          <a href="#portfolio" class="btnref">Portfolio</a>
+          <a href="#home-packages" class="btnref">Skills</a>
           <!-- <a href="" class="btnref">Contact</a> -->
         </div>
 
         <div class="social-links">
-          <a id="facebook-link-pg1" href="" class="btn"
+          <a id="facebook-link-pg1" href="https://www.facebook.com/zeyad.abosetta.9" class="btn"
             ><i class="bi bi-facebook"></i
           ></a>
-          <a id="linkedin-link-pg1" href="" class="btn"
+          <a id="linkedin-link-pg1" href="https://www.linkedin.com/in/zeyad-abosetta-z25?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn"
             ><i class="bi bi-linkedin"></i
           ></a>
-          <a id="whatsapp-link-pg1" href="" class="btn"
+          <a id="whatsapp-link-pg1" href="https://wa.me/+20102-435-6959" class="btn"
             ><i class="bi bi-whatsapp"></i
           ></a>
-          <a id="github-link-pg1" href="" class="btn"
+          <a id="github-link-pg1" href="https://github.com/Zeyad-Gamal" class="btn"
             ><i class="bi bi-github"></i
           ></a>
-          <a id="instagram-link-pg1" href="" class="btn"
+          <a id="instagram-link-pg1" href="https://www.instagram.com/zeyad_2552002?igsh=MWV6ZnZmM3VrZ2FqcA==" class="btn"
             ><i class="bi bi-instagram"></i
           ></a>
-          <a id="twitter-link-pg1" href="" class="btn"
-            ><i class="bi bi-twitter"></i
+          <a id="twitter-link-pg1" href="https://x.com/ZAbosetta?t=Lk9JJSWe4ZyN4lJiohJwlA&s=09" class="btn"
+            ><i class="bi bi-twitter-x"></i
           ></a>
 
-          <a id="hire-link-pg1" href="" class="btn">Hire me</a>
+          <a id="hire-link-pg1" href="#review" class="btn">Hire me</a>
           <a
             id="resume-link-pg1"
             href="Zeyad Gamal Abosetta - CV.pdf"
@@ -463,23 +480,13 @@ color: #f19b2c;
         </div>
       </div>
 
-      <!-- <div class="image">
-        <img src="images/result.png" alt="" />
-      </div> -->
 
-      <!-- <div class="form">
-        <a id="facebook-link-pg1" href="" class="btn"><i class="bi bi-facebook"></i></a>
-        <a id="linkedin-link-pg1" href="" class="btn"><i class="bi bi-linkedin"></i></a>
-        <a id="whatsapp-link-pg1" href="" class="btn"><i class="bi bi-whatsapp"></i></a>
-        <a id="github-link-pg1" href="" class="btn"><i class="bi bi-github"></i></a>
-        <a id="instagram-link-pg1" href="" class="btn"><i class="bi bi-instagram"></i></a>
-        <a id="twitter-link-pg1" href="" class="btn"><i class="bi bi-twitter"></i></a>
-    </div> -->
     </section>
 
      
 
     <section
+    id="about"
       class="review"
       style="
         background: rgb(18, 49, 85);
@@ -496,7 +503,7 @@ color: #f19b2c;
 
       <section class="review" style="background-color: rgba(19, 19, 77, 0.551)">
         <div class="form" style="margin-top: 5rem">
-          <h1 id="title-pag2" class="heading-title" style="color: whitesmoke">
+          <h1 id="title-pag2" class="heading-title" style="color: whitesmoke;">
             about
           </h1>
           <h1
@@ -549,7 +556,7 @@ color: #f19b2c;
     </div> -->
 
         <div class="image" style="flex: 1 1 1rem">
-          <img src="images/my.png" alt="" style="width: 80%;" />
+          <!-- <img src="images/my.png" alt="" style="width: 80%;" /> -->
         </div>
       </section>
     </section>
@@ -960,7 +967,7 @@ color: #f19b2c;
 
 
 
-        <div class="form">
+        <div class="form" id="services">
           <h1 id="title-pag3" class="heading-title" style="color: whitesmoke">
             Services
           </h1>
@@ -972,8 +979,7 @@ color: #f19b2c;
               text-align: left;
             "
           >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            praesentium!
+          Here are the services I provide
           </p>
           <hr style="color: aliceblue" />
 
@@ -1043,7 +1049,7 @@ color: #f19b2c;
               text-align: left;
             "
           >
-            Design languages, frameworks and libraries
+          Here are the latest projects I have implemented
           </p>
           <br />
 
@@ -1326,7 +1332,7 @@ color: #f19b2c;
 
 <section
 id="certificate"
-class="portfolio certificates"
+class=" certificates"
 style="
   background: rgb(18, 49, 85);
   background: linear-gradient(
@@ -1339,7 +1345,7 @@ style="
 "
 >
 <section
-  id="home-packages"
+  
   class="packages"
   style="background-color: rgba(19, 19, 77, 0.551)"
 >
@@ -1356,7 +1362,7 @@ style="
         text-align: left;
       "
     >
-      Design languages, frameworks and libraries
+    Some of the certificates I obtained
     </p>
     <br />
 
@@ -1408,27 +1414,45 @@ style="
         background-position: center;
       "
       class="review"
-      dir="rtl"
-      lang="ar"
+      id="review"
+ 
     >
       <div class="form" dir="ltr">
         <form
+          id="reviewForm"
           action=""
           method="post"
           class="review-form"
-          style="text-align: left"
+          style="text-align: left;height: 101%;"
         >
           <!-- <h2 class="heading-title" style="text-align: center;" dir="rtl" lang="ar">اترك رأيك</h2> -->
 
           <div class="flex">
+            
+
             <div class="inputBox">
               <span>Name :</span>
-              <input type="text" placeholder="Enter your name" name="name" />
+              <input type="text" id="nameInput" placeholder="Enter your name" name="mailname" required />
             </div>
 
             <div class="inputBox">
-              <span>Email :</span>
-              <input type="email" placeholder="Enter your email" name="email" />
+              <span>Phone :</span>
+              <input type="tel" id="phoneInput" placeholder="Enter your phone" name="mailphone" />
+            </div>
+
+            <div class="inputBox">
+              <span>Subject :</span>
+              <!-- <input type="text" id="subjectInput" placeholder="Enter subject" name="mailsubject" /> -->
+              <select name="" id="subjectInput" required>
+                <option value="">Choose a subject</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Freelance Opportunity">Freelance Opportunity</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Web Application Development">Web Application Development</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Feedback or Suggestions">Feedback or Suggestions</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
 
             <div class="inputBox">
@@ -1436,7 +1460,7 @@ style="
 
               <textarea
                 class="form-control"
-                id="review"
+                id="bodyInput"
                 rows="5"
                 placeholder="Your message"
                 required
@@ -1444,7 +1468,11 @@ style="
             </div>
           </div>
 
-          <input type="submit" value="Send" class="btn" name="send" />
+          <div class="inputBox inputBox-btn" id="sendmsg-container">
+            <!-- <input id="sendmsg" type="submit" value="Send" class="btnn" name="send" /> -->
+            <a href="javascript:void(0);" onclick="emailValidation();" id="sendmsg"  class="btnn" name="send">Send</a>
+           </div>
+          
         </form>
       </div>
 
@@ -1472,8 +1500,8 @@ style="
         </div>
 
         <div class="box">
-          <h3>معلومات الإتصال</h3>
-          <a href="tel:+20 102-435-6959" title="اتصل بنا">
+          <h3>Contact info</h3>
+          <a href="tel:+20 102-435-6959" title="Call me">
             <i class="fas fa-phone"></i> +20 102-4356-959
           </a>
           <a href="https://wa.me/+20102-435-6959">
@@ -1490,7 +1518,7 @@ style="
         </div>
 
         <div class="box">
-          <img style="width: 50%" src="bootstrap.png" alt="" />
+          <h1 style="font-size: 15rem;color: coral;text-decoration: underline dotted;">ZA</h1>
         </div>
       </div>
 
@@ -1499,34 +1527,7 @@ style="
       </div>
     </section>
 
-    <!-- <script>
-  function portfolio_buttons(chi) {
-    
-   const portfoliobutton  =  document.querySelector('.portfolio .packages .form .portfolio-button-menu a');
-   portfoliobutton.style.backgroundColor = ('white');
 
-
-
-
-
-   const parentElements = document.querySelectorAll('.portfolio .packages .form .portfolio-button-menu');
-
-for (const parentElement of parentElements) {
-  const secondChildElement = parentElement.children[chi];
-
-  for(var i=0 ; i< 5 ; i++){
-    if(i==chi){
-  secondChildElement.style.backgroundColor = 'red';
-
-  secondChildElement.style.backgroundColor = 'rgb(255, 238, 55)';
-
-    }
-    
-  }
-
-}
-  }
-</script> -->
 
 <script>
    var words = [
@@ -1579,76 +1580,10 @@ for (const parentElement of parentElements) {
       });
 </script>
 
-    <script>
-      var portf_boxs;
-      var portf_boxs2;
-      var frontend_box = document.querySelectorAll('.portfolio .packages .box-container .frontend');
-      var backend_box = document.querySelectorAll('.portfolio .packages .box-container .backend');
-      var portf_menu = document.querySelectorAll('.portfolio-button-menu  a');
-      console.log(frontend_box);
-      function portfolio_buttons(chi) {
-        portf_boxs = document.querySelectorAll('.portfolio .packages .box-container .box');
-      console.log(portf_boxs.length);
 
-        for (var i = 0; i < portf_boxs.length; i++) {
-          if(i<=4){
-          portf_menu[i].style.backgroundColor =
-            "#fff";
-          }
-             portf_boxs[i].style.display="none";
-        }
-
-        portf_boxs2=document.querySelectorAll('.portfolio .packages .box-container .'+chi);
-        for (var j = 0; j < portf_boxs2.length; j++) {
-             portf_boxs2[j].style.display="inline-block";
-        }
-        document.getElementById("portfolio-btn"+chi).style.backgroundColor = "rgb(255, 238, 55)";
-
-
-          
-      }
-
-
-
-
-
-
-
-
-
-      function portfolio_buttons_selector(chi) {
-        console.log(chi.value);
-
-        portf_boxs = document.querySelectorAll('.portfolio .packages .box-container .box');
-        for (var i = 0; i < 5; i++) {
-             portf_boxs[i].style.display="none";
-        }
-
-        portf_boxs2=document.querySelectorAll('.portfolio .packages .box-container .'+chi.value);
-        for (var j = 0; j < portf_boxs2.length; j++) {
-             portf_boxs2[j].style.display="inline-block";
-        }
- 
-      }
-    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script>
-  // console.log(scrollY) 1152;
-  window.addEventListener('scroll', function() {
-  if (window.scrollY >= 1152) {
-    var progressbars= document.querySelectorAll('.packages .review .box-container .box .progress .progress-bar');
-    
-    progressbars.forEach(function(element) {
-      element.style.animation = "typing 0.7s steps(200, end)";
-    });
-
-  }
-  
-});
-  
-</script>
     <script src="js/script.js"></script>
   </body>
 </html>
