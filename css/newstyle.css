@@ -1032,6 +1032,10 @@ justify-content: center;
     padding-inline: 2rem;
   }
 
+  .certificates .packages .box-container .box .certf-slider:hover{
+    animation-play-state:paused;
+  }
+
   .certificates .packages .box-container {
     width: 100%;
     display: grid;
