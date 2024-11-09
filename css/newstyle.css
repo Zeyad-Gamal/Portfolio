@@ -1297,6 +1297,10 @@ justify-content: center;
     background-color: rgb(255, 238, 55);
   }
 
+
+  .portfolio .packages .box-container {
+    justify-content: center;
+  }
   @media (max-width: 380px) {
     .portfolio .packages .box-container {
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
@@ -1328,7 +1332,10 @@ justify-content: center;
     }
   }
 
-
+  .certificates .packages .box-container{
+    display: flex;
+    justify-content: center;
+  }
 
 
 .certificates .packages .box-container .box{
