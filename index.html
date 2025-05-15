@@ -7,8 +7,11 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <title>Zeyad Gamal portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
-    <link rel="stylesheet" href="css/swiper-bundlemin.css" />
+    <!-- <link rel="stylesheet" href="css/swiper-bundlemin.css" /> -->
 
     <link
       rel="stylesheet"
@@ -21,7 +24,21 @@
 
     <link rel="stylesheet" href="css/newstyle.css" />
 
+
+ 
+
     <style>
+      
+      *:hover{
+        cursor: url(images/cursors/cursor.svg) 1 1, auto;
+      }
+
+      body{
+  /* cursor: url(https://www.svgrepo.com/show/310716/cursor.svg) , auto ;  */
+  /* cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto; */
+  cursor: url(images/cursors/cursor.svg) 1 1, auto;
+  /* cursor: url(images/cursors/cursor.svg) 1 1, pointer; */
+}
       .hero {
         position: relative;
         height: 100vh;
@@ -69,9 +86,243 @@
 
         justify-content: center;
       }
+
+      
+/* .loaderWrapper {
+  height: 90px;
+  overflow: hidden;
+ 
+}
+
+.loaderInner {
+  position: relative;
+  animation-name: languageSwitch;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.4s;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.loader {
+  display: flex;
+  align-items: baseline;
+  width: auto;
+  width: 190px;
+  height:90px;
+}
+
+.letter {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: white;
+  animation-name: letterAppears;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  width: 1px;
+  visibility: hidden;
+  animation-delay: 1.5s;
+}
+
+.letterO {
+  background-color: white;
+  height: 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  animation-name: loader;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  border: 10px solid white;
+}
+.welcome {
+  font-family: sans-serif;
+  font-size: 52px;
+  font-weight: 900;
+  color: white;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+/* animation keyframes */
+/* 
+@keyframes loader {
+  0% {
+    width: 1px;
+  }
+  60% {
+    background-color: white;
+    width: 100%;
+  }
+  90% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+    width: 100%;
+  }
+}
+
+@keyframes letterAppears {
+  0% {
+    width: 1px;
+    transform: rotate(15deg);
+  }
+  100% {
+    width: 100%;
+    transform: rotate(0);
+    visibility: visible;
+  }
+}
+
+@keyframes languageSwitch {
+  0% {
+    bottom: 0;
+  }
+  15% {
+    bottom: 0;
+  }
+  20% {
+    bottom: 90px;
+  }
+  35% {
+    bottom: 90px;
+  }
+  40% {
+    bottom: 180px;
+  }
+  55% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 270px;
+  }
+  75% {
+    bottom: 270px;
+  }
+  80% {
+    bottom: 360px;
+  }
+  95% {
+    bottom: 360px;
+  }
+  100% {
+    bottom: 450px;
+  }
+} */ 
+
+.loader-element {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+  }
+
+  .loader-element:before,
+  .loader-element:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+  .loader-element:before {
+    animation: ball1 1s infinite;
+    background-color: #fff;
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-bottom: 10px;
+  }
+  .loader-element:after {
+    animation: ball2 1s infinite;
+    background-color: #ff3d00;
+    box-shadow: 30px 0 0 #fff;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #ff3d00;
+    }
+    50% {
+      box-shadow: 0 0 0 #ff3d00;
+      margin-bottom: 0;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #ff3d00;
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #fff;
+    }
+    50% {
+      box-shadow: 0 0 0 #fff;
+      margin-top: -20px;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #fff;
+      margin-top: 0;
+    }
+  }
+  
+    
     </style>
   </head>
   <body>
+
+    <div id="loader-element-background" style="background-color: rgb(36, 36, 36);position: absolute;width: 100%;height: 100%;z-index: 1000;display: flex;justify-content: center;align-items: center;">
+      <!-- <div id="loader-element" class="loaderWrapper">
+        <div class="loaderInner">
+          <div class=loader>
+            <span class=letter>H</span>
+            <span class=letter>E</span>
+            <span class=letter>L</span>
+            <span class=letter>L</span>
+            <div class=letterO></div>
+          </div>
+          <div class="welcome">مرحباً</div>
+          <div class="welcome">Bonjour </div>
+          <div class="welcome">Guten Tag </div>
+          <div class="welcome">こんにちは </div>
+          <div class="welcome">Goddag </div>
+          <div class="welcome">Goedendag </div>
+        </div>
+      </div> -->
+      <span class="loader-element" id="loader-element"></span>
+    </div>
+
+<div  class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body" style="display: flex;flex-direction: column; justify-content: space-around;margin: auto;padding: 3rem;">
+        <!-- <img src="images/content/night.png" alt="" width="100"> -->
+        <div id="message-even-icon" style="background: url(images/content/night.png);background-position: center;
+        background-repeat: no-repeat;background-size: cover;width: 10rem;height: 10rem;margin: auto;"></div>
+        <h4 id="message-even-text" style="margin-top: 2rem; font-size: 3.3rem;font-family: cursive;"></h4>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- <span id="loader-element" class="loader"></span> -->
     <!-- <div style="background-color: rgb(34, 15, 53);opacity: 0.5; padding-right: 20rem;padding-top: 66rem;  position: absolute;margin-left: 66rem; "></div> -->
 
     <style>
@@ -84,7 +335,7 @@
   transition: 0.4s;
          border-bottom-right-radius: 2rem;
          border-top-right-radius: 2rem;
-
+         z-index: 1000;
       }
        .nnav a{
    transition: 0.1s;
@@ -106,8 +357,30 @@
   
   }
 
+  /*  */
+  .nnav .time-content{
+   transition: 0.1s;
+  font-size: 2.1rem;
+  margin-left: 2rem;
+  color: var(--main-color);
+  border-bottom: none;
+  text-decoration: none;
+  font-weight: 600;
+  position: absolute;
+  top: 66%;
+  /* display: block; */
+  display: none;
+ 
+}
 
 
+
+.nnav .time-content:after {
+    display:none;
+  
+  }
+
+/*  */
  .nnav a:hover{
   transition: 0.4s;
 
@@ -129,6 +402,12 @@
 }
 
 .nnav:hover a{
+  transition: 0.1s;
+ display: block;
+}
+
+
+.nnav:hover .time-content{
   transition: 0.1s;
  display: block;
 }
@@ -184,7 +463,8 @@ color: #f19b2c;
 
 
 #pg1-img{
-  animation: anim-pg1-img 0.5s linear;
+  transform: rotateY(45deg);
+  animation: anim-pg1-img 0.5s linear forwards;
 }
 
  
@@ -218,14 +498,17 @@ color: #f19b2c;
 
 @keyframes anim-pg1-img {
   0%{
-    transform: translateX(-700px);
+    transform: translateX(-700px) rotate(180deg);
     background-color: white;
     opacity: 0;
+    
+
   }
 
   100%{
     background-color: transparent;
     opacity: 1;
+    transform: rotate(360deg);
   }
 }
 
@@ -280,8 +563,30 @@ color: #f19b2c;
 }
 
 
+.more-btn{
+  background-color: #f19b2c;color: whitesmoke;
+  border-radius: 0.5rem;
+  width: fit-content;font-size: 1.7rem;
+  text-decoration: none;padding: 0.8rem;
+  margin-block: 4rem;
+  transition: 0.5s;
+  
+}
+
+
+.more-btn:hover{
+  background-color: #f7991f;color: white;
+
+}
+
+
+
+
 
  </style>
+
+
+
 
     <div id="side-nav"  class="nnav">
       <!-- <a style="padding-bottom: 1rem; padding-top: 1rem; width: 6rem;font-size: 2rem;" id="sign-in-btn"><i class="bi bi-gear"></i></a>
@@ -319,11 +624,16 @@ color: #f19b2c;
 
 
 
+      <h1 id="side-nav-current-time" class="time-content"></h1>
      
       </div>
 
+
+      
+
     <section
       class="header"
+      id="header-data"
       style="
         background-color: rgba(255, 255, 255, 0.834);
         padding-bottom: 1rem;
@@ -360,7 +670,7 @@ color: #f19b2c;
 
       <div id="menu-btn" class="fas fa-bars"></div>
     </section>
-
+    
     
 
     <section
@@ -378,15 +688,18 @@ color: #f19b2c;
       "
     >
 
-      <div class="image">
-<!--         <img id="pg1-img"  style="width: 90%; border-radius: 50%; " src="images/portfolioImage1.png" alt="" /> -->
-        <img id="pg1-img"  style="width: 90%; border-radius: 50%; " src="images/my (2).png" alt="" />
+      <div class="image" style="background: url(../../../blob-haikei\ \(12\).svg);background-position: center;background-repeat: no-repeat;background-size: cover; opacity: 0.7; display: flex;justify-content: center;align-items: center;">
+        <img id="pg1-img"  style="width: 60%;  -webkit-filter: drop-shadow(5px 5px 5px #e2e2e238);
+  filter: drop-shadow(5px 5px 5px #e2e2e238);transform: rotate(270deg);width: 75% !important;filter: drop-shadow(0 0.6rem 0.75rem rgba(59, 68, 122, 0.521));
+  border-bottom-left-radius: 50%;border-bottom-right-radius: 30%; margin-bottom: 9rem;filter: grayscale(0.7);
+  " src="images/portfolioImage1.png" alt="" />
+<!--         <img id="pg1-img"  style="width: 90%; border-radius: 50%; " src="images/my (2).png" alt="" /> -->
       </div>
 
       
 
 
-      <div style="text-align: center;" class="form">
+      <div style="text-align: center;position: relative; bottom: 4rem !important;" class="form">
         <!-- Full-stack developer -->
         <h1 class="heading-title" style="color: whitesmoke;text-align: center;font-weight: 600;">Zeyad Gamal</h1>
 
@@ -440,9 +753,8 @@ color: #f19b2c;
             text-align: justify;
           "
         >
-          I am Ziad Gamal. I work as a software developer and designer, and I
-          study as a student in the fourth year of computer science at
-          <strong>AAST</strong> .
+          I am Ziad Gamal. I work as a software developer and designer, and I graduated from the Faculty of Computers and Information Technology from the <strong>AAST</strong> in 2024
+           .
         </p>
 
         <div class="refs">
@@ -478,7 +790,7 @@ color: #f19b2c;
           <a id="hire-link-pg1" href="#review" class="btn">Hire me</a>
           <a
             id="resume-link-pg1"
-            href="Zeyad Gamal Abosetta - CV.pdf"
+            href="cv/Zeyad Gamal Abo setta   Software engineer.docx"
             class="btn"
             ><span>Resume&nbsp;</span><i class="bi bi-download"></i
           ></a>
@@ -506,7 +818,7 @@ color: #f19b2c;
     >
      
 
-      <section class="review" style="background-color: rgba(19, 19, 77, 0.551)">
+      <section class="review" style="background-color: rgba(19, 19, 77, 0.551);display: flex !important; justify-content: space-around !important;">
         <div class="form" style="margin-top: 5rem">
           <h1 id="title-pag2" class="heading-title" style="color: whitesmoke;">
             about
@@ -534,13 +846,12 @@ color: #f19b2c;
             I am <strong style="color: coral">Zeyad Gamal</strong>. I work as a
             software developer and my field of work is based on designing and
             developing web pages. I also create and develop desktop and mobile
-            programs. I am studying computer science in the 4<sup>th</sup> grade
-            at <strong>AAST</strong>.
+            programs. I graduated from computer science at <strong>AAST</strong> in 2024.
           </p>
 
           <div class="Contact-pg2">
             <li class="contact-pg2-ref">
-              <i class="fas fa-phone"></i>&nbsp;+0102-435-6959
+              <i class="fas fa-phone"></i>&nbsp;+0109-701-1799
             </li>
             <li class="contact-pg2-ref">
               <i class="fas fa-envelope"></i>&nbsp;zeyadabosetta2@gmail.com
@@ -560,11 +871,12 @@ color: #f19b2c;
         <a id="twitter-link-pg1" href="" class="btn"><i class="bi bi-twitter"></i></a>
     </div> -->
 
-        <div class="image" style="flex: 1 1 1rem">
-          <!-- <img src="images/my.png" alt="" style="width: 80%;" /> -->
+        <div class="" style="background: url(../../../blob-haikei\ \(11\).svg);background-position: center;background-repeat: no-repeat;background-size: cover; display: flex;flex-wrap: wrap; justify-content: center;align-items: center;opacity: 0.8;">
+          <img src="images/my (2).png" alt="" style="width: 34rem;transform: rotateY(180deg);margin-bottom: 7rem;filter: grayscale(0.5);" />
         </div>
       </section>
     </section>
+
 
     
     <!-- <div style="background-color: rgb(34, 15, 53);opacity: 0.5; padding-right: 20rem;padding-top: 66rem;  position: absolute;margin-left: 66rem; "></div> -->
@@ -681,6 +993,58 @@ color: #f19b2c;
               </div>
             </div>
           </div>
+
+
+
+
+
+          <div class="box">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 30%"
+              >
+                <span>Flutter</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="box">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%"
+              >
+                <span>Laravel</span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="box">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 40%"
+              >
+                <span>Flask</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="form">
@@ -757,6 +1121,42 @@ color: #f19b2c;
               </div>
             </div>
           </div>
+
+
+          <div class="box">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 60%"
+              >
+                <span>SQLite</span>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="box">
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
 
         <div class="form">
@@ -927,10 +1327,10 @@ color: #f19b2c;
       <div
         class="progress-bar"
         role="progressbar"
-        aria-valuenow="70"
+        aria-valuenow="40"
         aria-valuemin="0"
         aria-valuemax="100"
-        style="width: 70%"
+        style="width: 40%"
       >
         <span>UI / UX</span>
       </div>
@@ -942,10 +1342,10 @@ color: #f19b2c;
       <div
         class="progress-bar"
         role="progressbar"
-        aria-valuenow="75"
+        aria-valuenow="50"
         aria-valuemin="0"
         aria-valuemax="100"
-        style="width: 75%"
+        style="width: 50%"
       >
         <span>Marketing</span>
       </div>
@@ -1020,6 +1420,8 @@ color: #f19b2c;
       </section>
     </section>
 
+
+
  
 
     <section
@@ -1039,7 +1441,7 @@ color: #f19b2c;
       <section
         id="home-packages"
         class="packages"
-        style="background-color: rgba(19, 19, 77, 0.551)"
+        style="background-color: rgba(19, 19, 77, 0.551);"
       >
         <div class="form">
           <h1 id="title-pag3" class="heading-title" style="color: whitesmoke">
@@ -1058,7 +1460,6 @@ color: #f19b2c;
           </p>
           <br />
 
-          <select style="width: 50%;margin: auto;" name="" id="select-portf-type" class="portfolio-button-menu" onchange="portfolio_buttons_selector(this)">
             <option value="box">  <a
               id="portfolio-btnbox"
               href="#portfolio"
@@ -1133,16 +1534,17 @@ color: #f19b2c;
               onclick="portfolio_buttons('mobile')"
               >mobile</a
             >
-          </div>
+          </div> -->
           <br /><br />
           <hr style="color: aliceblue" />
         </div>
 
         <div class="box-container">
+     
           <div class="box backend">
             <div class="image">
               <img src="images/website2.png" alt="" />
-              <img class="imghov" src="images/website22.png" alt="" />
+              <!-- <img class="imghov" src="images/website22.png" alt="" /> -->
             </div>
 
             <div class="content">
@@ -1168,7 +1570,7 @@ color: #f19b2c;
           <div class="box frontend">
             <div class="image">
               <img src="images/website1.png" alt="" />
-              <img class="imghov" src="images/website12.png" alt="" />
+              <!-- <img class="imghov" src="images/website12.png" alt="" /> -->
             </div>
 
             <div class="content">
@@ -1191,7 +1593,7 @@ color: #f19b2c;
           <div class="box backend">
             <div class="image">
               <img src="images/website43.png" alt="" />
-              <img class="imghov" src="images/website45.png" alt="" />
+              <!-- <img class="imghov" src="images/website45.png" alt="" /> -->
             </div>
 
             <div class="content">
@@ -1215,64 +1617,14 @@ color: #f19b2c;
             </div>
           </div>
 
-          <div class="box frontend">
-            <div class="image">
-              <img src="images/portfoliowebsite.png" alt="" />
-              <img class="imghov" src="images/portfoliowebsite2.png" alt="" />
-            </div>
+       
 
-            <div class="content">
-              <hr />
-
-              <style>
-                .content i img {
-                  width: 9%;
-                  padding-right: 2rem;
-                }
-              </style>
-              <i><img src="html-5.png" alt="" /></i>
-              <i><img src="css-3.png" alt="" /></i>
-              <i><img src="js.png" alt="" /></i>
-              <i><img src="bootstrap.png" alt="" /></i>
-              <p>Portfolio</p>
-              <div class="box-buttons">
-                <a href="#" class="portfolio-btn">Demo</a>
-                <a href="#" class="portfolio-btn portfolio-btn-fill"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <!-- <a  href="#" class="btn">طلب </a> -->
-                <!-- <a  href="#" class="btn menu"><i  class="bi bi-search"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="box frontend">
-            <div class="image">
-              <img src="images/website5.png" alt="" />
-              <img class="imghov" src="images/website52.png" alt="" />
-            </div>
-
-            <div class="content">
-              <hr />
-              <i><img src="html-5.png" alt="" /></i>
-              <i><img src="css-3.png" alt="" /></i>
-              <i><img src="js.png" alt="" /></i>
-              <p>Restaurant website</p>
-              <div class="box-buttons">
-                <a href="#" class="portfolio-btn">Demo</a>
-                <a href="#" class="portfolio-btn portfolio-btn-fill"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <!-- <a  href="#" class="btn">طلب </a> -->
-                <!-- <a  href="#" class="btn menu"><i  class="bi bi-search"></i></a> -->
-              </div>
-            </div>
-          </div>
+       
 
           <div class="box frontend">
             <div class="image">
               <img src="images/website61.png" alt="" />
-              <img class="imghov" src="images/website62.png" alt="" />
+              <!-- <img class="imghov" src="images/website62.png" alt="" /> -->
             </div>
 
             <div class="content">
@@ -1294,61 +1646,14 @@ color: #f19b2c;
 
 
 
-
-          <div class="box desktop">
-            <div class="image">
-              <img src="images/options.png" alt="" />
-              <img class="imghov" src="images/safe receipt.png" alt="" />
-            </div>
-
-            <div class="content">
-              <hr />
-              <i><img src="images/java.png" alt="" /></i>
-              <i><img src="sql.png" alt="" /></i>
-
-              <p>
-                Supermarket management system
-              </p>
-              <div class="box-buttons">
-                <a href="#" class="portfolio-btn">Demo</a>
-                <a href="#" class="portfolio-btn portfolio-btn-fill"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <!-- <a  href="#" class="portfolio-btn" style="width: 70%;">Demo</a> -->
-                <!-- <a  href="#" class="btn menu"><i  class="bi bi-search"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-
-          <div class="box desktop">
-            <div class="image">
-              <img src="images/java 1.png" alt="" />
-              <img class="imghov" src="images/java 2.png" alt="" />
-            </div>
-
-            <div class="content">
-              <hr />
-              <i><img src="images/java.png" alt="" /></i>
-              <i><img src="sql.png" alt="" /></i>
-
-              <p>
-                Supermarket management system
-              </p>
-              <div class="box-buttons">
-                <a href="#" class="portfolio-btn">Demo</a>
-                <a href="#" class="portfolio-btn portfolio-btn-fill"
-                  ><i class="bi bi-github"></i
-                ></a>
-                <!-- <a  href="#" class="portfolio-btn" style="width: 70%;">Demo</a> -->
-                <!-- <a  href="#" class="btn menu"><i  class="bi bi-search"></i></a> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- <a href="" class="btn">عرض أكثر</a> -->
         </div>
+
+        <div class="box-container" style="place-items: center;"> 
+          <a href="projects.html" class="more-btn">More projects</a>
+        </div>
+
       </section>
+
     </section>
 
 
@@ -1399,7 +1704,7 @@ style="
     <hr style="color: aliceblue" />
   </div>
 
-  <div class="box-container" >
+  <!-- <div class="box-container" style="background-color: red;">
     <div class="box" >
       <div class="certf-slider" >
         
@@ -1413,7 +1718,223 @@ style="
       </div>
     </div>
     
-   </div>
+   </div> -->
+
+   <style>
+    
+    #customers-testimonials .shadow-effect .paragrap-comment span{
+        left:0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        
+    }
+
+    /* #customers-testimonials .shadow-effect .paragrap-comment{
+        display: flex !important;flex-direction: row !important; justify-content: space-around !important;gap: 2rem !important;
+    } */
+    
+    
+
+
+.shadow-effect {
+    /* background: #f1f1f1; */
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1rem;
+    /* padding: 20px; */
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+    width: 90%; /* Increased width from 100% to 80% */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin: auto;
+    height:52vh ;
+    
+}
+
+
+        #customers-testimonials .shadow-effect p {
+            font-family: inherit;
+            font-size: 2vh;
+            line-height: 1.5;
+            margin: 0 0 17px 0;
+            font-weight: 300;
+            color: var(--paragraph);
+            text-align: justify;
+            
+        }
+
+        .testimonial-name {
+            margin: -17px auto 0;
+            display: table;
+            width: auto;
+            background: #3190E7;
+            padding: 9px 35px;
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+        }
+
+        #customers-testimonials .item {
+            text-align: center;
+            /* padding: 30px; */
+			width: 100%;
+            opacity: .2;
+            transition: all 0.3s ease-in-out;
+            /* background-color: black; */
+            margin: 0 !important;
+        }
+
+        #customers-testimonials .owl-item.active.center .item {
+            opacity: 1;
+            transform: scale3d(1.0, 1.0, 1);
+        }
+
+        .owl-carousel .owl-item{
+            /* background-color: #3190E7; */
+            height: 100% !important;
+        }
+        .owl-carousel .owl-item img {
+            /* width: 100vh !important; */
+            margin: auto;
+            /* width: 100% !important; */
+            box-shadow: 0 9px 18px rgba(213, 213, 213, 0.12), 0 5px 7px rgba(219, 218, 218, 0.05);
+            max-height: 50vh ;
+            /* border-radius: 50%; */
+            /* padding-block: 2rem; */
+        }
+
+        .owl-stage-outer {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .owl-stage {
+            padding: 0;
+            margin: 0;
+        }
+
+        .owl-dots {
+          display: none;
+        }
+
+
+
+
+
+        @media only screen and (max-width: 520px) {
+          
+            .shadow-effect{
+                /* flex-wrap: wrap !important;
+                flex-direction: column !important;
+    height:auto !important ; */
+            }
+
+
+
+            .owl-carousel .owl-item img {
+            /* max-width: 11vh; */
+            /* margin: auto !important; */
+        }
+
+
+        .shadow-effect{
+            padding-block: 0 !important;
+            gap: 0 !important;
+        }
+
+
+        }
+   </style>
+   
+
+   <div class="row" style="width: 100%; margin: 0; padding: 0;">
+    <div class="col-sm-12" style="padding: 0;">
+   
+        <div id="customers-testimonials" class="owl-carousel">
+            <!-- TESTIMONIAL 1 -->
+
+            <div class="item">
+              <div class="shadow-effect" >
+                  <img class="img-circle" src="images/certificates/AAST graduation.jpeg"   onerror="this.onerror=null; this.src=''">
+                
+              </div>
+          </div>
+
+            <div class="item">
+              <div class="shadow-effect" >
+                  <img class="img-circle" src="images/certificates/A U S.png"   onerror="this.onerror=null; this.src=''">
+                
+              </div>
+          </div>
+
+          <div class="item">
+            <div class="shadow-effect" >
+                <img class="img-circle" src="images/certificates/Google.png"   onerror="this.onerror=null; this.src=''">
+              
+            </div>
+        </div>
+
+        <div class="item">
+          <div class="shadow-effect" >
+              <img class="img-circle" src="images/certificates/hp life.png"   onerror="this.onerror=null; this.src=''">
+            
+          </div>
+      </div>
+
+
+      <div class="item">
+        <div class="shadow-effect" >
+            <img class="img-circle" src="images/certificates/Branding.jpg"   onerror="this.onerror=null; this.src=''">
+          
+        </div>
+    </div>
+
+
+   
+
+
+  <div class="item">
+    <div class="shadow-effect" >
+        <img class="img-circle" src="images/certificates/CIB training.jpeg"   onerror="this.onerror=null; this.src=''">
+      
+    </div>
+</div>
+
+
+<div class="item">
+  <div class="shadow-effect" >
+      <img class="img-circle" src="images/certificates/GDSC core team.jpeg"   onerror="this.onerror=null; this.src=''">
+    
+  </div>
+</div>
+
+
+
+<div class="item">
+  <div class="shadow-effect" >
+      <img class="img-circle" src="images/certificates/Sixty Seventh PlaceContestant537492-1_page-0001.jpg"   onerror="this.onerror=null; this.src=''">
+    
+  </div>
+</div>
+
+
+<div class="item">
+  <div class="shadow-effect" >
+      <img class="img-circle" src="images/certificates/Python.jpg"   onerror="this.onerror=null; this.src=''">
+    
+  </div>
+</div>
+
+
+
+        </div>
+        </div>
+</div>
 </section>
 </section>
 
@@ -1538,13 +2059,13 @@ style="
             <i class="fab fa-whatsapp"></i> +20 109-7011-799
           </a>
           <a href="#">
-            <i class="fas fa-map"></i><sub style="color: coral">1</sub> Egypt -
+            <i class="fas fa-map"></i>Egypt -
             Qena - Qeft</a
           >
-          <a href="#">
+          <!-- <a href="#">
             <i class="fas fa-map"></i><sub style="color: coral">2</sub> Egypt -
             Aswan</a
-          >
+          > -->
         </div>
 
         <div class="box">
@@ -1556,6 +2077,135 @@ style="
         created by <span> zeyad abosetta</span> | all rights reserved!
       </div>
     </section>
+
+
+
+
+
+<!-- 
+    <dialog open>
+      <p>Greetings, one and all!</p>
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </dialog> -->
+    
+
+    
+<script>
+
+
+   const allSections  = [
+ 'side-nav', 'header-data',   'home', 'about' , 'home-packages' ,  'portfolio' ,  'certificate' ,  'review' , 'footer'
+
+    ];
+
+
+    for (let index = 0; index < allSections.length; index++) {
+     const element = allSections[index];
+     document.getElementById(element).style.display="none";
+    
+    }
+
+ setTimeout(() => {
+  document.getElementById("loader-element").style.display = "none";
+  document.getElementById("loader-element-background").style.display = "none";
+
+   for (let index = 0; index < allSections.length; index++) {
+     const element = allSections[index];
+  //   // alert(element);
+     document.getElementById(element).style.display="";
+    
+    }
+
+
+     
+ $(document).ready(function() {
+    $('#exampleModal').modal('show');
+  });
+
+ }, 3000);
+
+
+
+
+
+
+
+
+
+
+ // Function to get and display the current time
+ function displayTime() {
+  const now = new Date();
+    
+    // Get the current time in the device's local timezone (HH:MM:SS format)
+    let hours = now.getHours();
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    
+    // Determine AM or PM
+    const amPm = hours >= 12 ? 'PM' : 'AM';
+
+    // zone_this_time(amPm);
+    
+    // Convert hours to 12-hour format
+    hours = hours % 12;
+    if (hours === 0) {
+      hours = 12; // Handle midnight case
+    }
+    
+    // Format the time string
+    const timeString = `${hours.toString().padStart(2, '0')}:${minutes}:${seconds} ${amPm}`;
+
+      document.getElementById('side-nav-current-time').textContent = timeString;
+    }
+
+    // Call the function to update the time when the page loads
+    displayTime();
+
+    // Optionally, update the time every second
+    setInterval(displayTime, 1000);
+
+
+
+</script>
+
+
+<script>
+
+
+
+function zone_this_time(){
+  const now = new Date();
+
+  let hours = now.getHours();
+    // Determine AM or PM
+    const amPm = hours >= 12 ? 'PM' : 'AM';
+    var zoneElement = document.getElementById('message-even-icon');
+    var zoneElement_text = document.getElementById('message-even-text');
+
+    if (amPm == "AM") {
+      zoneElement.style.background = "url('images/content/morning.png') no-repeat center center";
+      zoneElement_text.innerHTML= "Good Morning";
+    }
+
+    else if (amPm == "PM") {
+      zoneElement.style.background = "url('images/content/night.png') no-repeat center center";
+      zoneElement_text.innerHTML= "Good Evening";
+
+    }
+
+    zoneElement.style.backgroundSize = "cover"; // Optional, to make it cover the entire element
+
+
+}
+
+
+zone_this_time();
+
+
+</script>
 
 
 
@@ -1612,8 +2262,67 @@ style="
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+           
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+
+
+
+
+
+
+    
+<script>
+  
+
+  $('#customers-testimonials').owlCarousel({
+    loop: true,
+    center: true,
+    items: 2, // Reduced from 3 to 2 for a larger item display
+    margin: 80,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    dotsEach: 1,
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 2 // Keep this to 2 for larger displays
+        },
+        1170: {
+            items: 2 // Keep this to 2 for larger displays
+        }
+    },
+    onInitialized: setDots,
+    onTranslated: setDots,
+});
+
+						
+							// Function to limit dots to 3
+							function setDots(event) {
+								var $dots = $('#customers-testimonials .owl-dots .owl-dot');
+								// Remove extra dots
+								if ($dots.length > 3) {
+									$dots.slice(3).remove();  // Ensure only 3 dots are visible
+								}
+							}
+						
+
+
+</script>
+
+
+
+
+    <script src="script/jquery.js"></script>
+    <script src="script/popper.min.js" ></script>
+    <script src="script/bootstrapbundilemin.js"  ></script>
+    <script src="script/owlcrouseljs.js"></script>
   </body>
 </html>
